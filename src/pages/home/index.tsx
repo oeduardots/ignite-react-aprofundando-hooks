@@ -18,15 +18,25 @@ export function Home() {
           <label htmlFor="task">Vou trabalhar em</label>
           <TaskInput
             id="task"
+            list="task-suggestions"
             type="text"
             placeholder="Dê um nome para o seu projeto"
           />
+
+          <datalist id="task-suggestions">
+            <option value="Estudar React.Js" />
+            <option value="Estudar React Native" />
+            <option value="Fazer Projetos" />
+          </datalist>
 
           <label htmlFor="minutesAmount">durante</label>
           <MinutesAmountInput
             id="minutesAmount"
             type="number"
             placeholder="00"
+            step={5}
+            min={5}
+            max={60}
           />
 
           <span>minutos.</span>
