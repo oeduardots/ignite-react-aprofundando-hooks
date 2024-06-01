@@ -14,20 +14,21 @@ import {
 // controlled vs uncontrolled
 
 export function Home() {
-  const [task, setTask] = useState('')
+  function handleSubmit(e) {
+    e.target.task.value
+  }
 
   return (
     <HomeContainer>
-      <form>
+      <form onSubmit={handleSubmit}>
         <FormContainer>
           <label htmlFor="task">Vou trabalhar em</label>
           <TaskInput
             id="task"
+            name="task"
             list="task-suggestions"
             type="text"
             placeholder="Dê um nome para o seu projeto"
-            onChange={(e) => setTask(e.target.value)}
-            value={task}
           />
 
           <datalist id="task-suggestions">
