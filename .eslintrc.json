@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "@rocketseat/eslint-config/react"
+  ],
+  "plugins": [
+    "simple-import-sort"
+  ],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "camelcase": "off"
+  }
+}
