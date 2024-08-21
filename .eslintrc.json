@@ -8,6 +8,7 @@
   "rules": {
     "simple-import-sort/imports": "error",
     "react-hooks/exhaustive-deps": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "no-unused-vars": "off"
   }
 }
